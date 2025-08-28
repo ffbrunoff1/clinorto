@@ -42,10 +42,10 @@ export default function Header() {
               <Stethoscope className="h-8 w-8 text-white" />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-2xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">
+              <h1 className={`text-2xl font-bold group-hover:text-primary-700 transition-colors ${isScrolled ? 'text-primary-600' : 'text-white'}`}>
                 Clinorto
               </h1>
-              <p className="text-xs text-gray-500 -mt-1">Ortodologia</p>
+              <p className={`text-xs -mt-1 ${isScrolled ? 'text-gray-500' : 'text-primary-100'}`}>Ortodologia</p>
             </div>
           </Link>
         </motion.div>
